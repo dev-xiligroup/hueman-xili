@@ -160,7 +160,7 @@ function hueman_xili_add_widgets () {
  *
  */
 function hueman_xili_flags_customize () {
-	remove_theme_support ( 'custom_xili_flag' ); // default created in setup above
+	remove_theme_support ( 'custom_xili_flag' ); // default created in setup above of child theme (%2$s)
 	$args = array(
 		'en_us'	=> array(
 			'path' => '%2$s/images/flags_2/en_us.png',
@@ -178,7 +178,12 @@ function hueman_xili_flags_customize () {
 			'width'					=> 24
 			),
 		'de_de'	=> array(
-			'path' => '%2$s/images/flags_2/de_de.png', //wp-content/themes/twentyfifteen-xili/images/flags_2/de_de.png
+			'path' => '%2$s/images/flags_2/de_de.png',
+			'height'				=> 24,
+			'width'					=> 24
+			),
+		'ja'	=> array(
+			'path' => '%2$s/images/flags_2/ja.png', //wp-content/themes/hueman-xili/images/flags_2/ja.png
 			'height'				=> 24,
 			'width'					=> 24
 			),
@@ -191,7 +196,7 @@ function hueman_get_default_xili_flag_options ( $default_array, $parent_theme ) 
 	// because here above sizes have changed, and hueman need create default values
 	// to recover these values: do not forget to reset to default values in xili flag options dashboard screen
 
-		$default_array['css_ul_nav_menu'] = '#nav-header';
+		$default_array['css_ul_nav_menu'] = '#nav-topbar';
 		$default_array['css_li_hover'] = 'background-color:#f5f5f5; background:rgba(255,255,255,0.3);' ;
 		$default_array['css_li_a'] = 'text-indent:-999px; width:24px; background:transparent no-repeat 0 12px; margin:0; padding-right:1px;' ;
 		$default_array['css_li_a_hover'] = 'background: no-repeat 0 13px !important;' ;

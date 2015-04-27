@@ -21,7 +21,9 @@ The parent theme 'Hueman' is [available here](https://wordpress.org/themes/huema
 1. After decompressing "master" .zip from Github, only upload the folder hueman-xili (near the readme.md) to themes folder , the child-theme files expect to be finally in `wp-content/themes/hueman-xili/`!
 1. Before updating, don’t forget to backup your own `.mo` language files
 
-## very first tests
+## very first tests since 2015-04-26
+1. add default ja flag
+1. topbar menu as default menu (**reset previous settings with checkbox at bottom of xili-flag options**)
 1. hueman version 1.5.4
 
-2015-04-26
+2015-04-27
